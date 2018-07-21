@@ -5,7 +5,7 @@ body{
   display: grid;
   grid-template-columns: 1;
   grid-template-rows: 15% 85%;
-}
+  }
 
 /*Header Section*/
 
@@ -51,7 +51,6 @@ header{
 .main-section{
   grid-row: 2;
   background-color: #efefef;
-  height: 100vh;
   padding-top: 2em;
 }
 
@@ -71,15 +70,28 @@ main h2{
 
 article{
   position: relative;
-
 }
 
 aside{
   position: absolute;
-  top: 42%;
+  font-size: fit-height;
+  top: 34%;
   width: 100%;
-  /*height: 60%;*/
+  height: 66%;
   background-color: white;
+}
+
+aside a{
+  display: block;
+  background-color: #efefef;
+  height: 45px;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+aside p{
+  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .card-template{
