@@ -162,10 +162,10 @@ aside p {
   background-position: 0px 1450px;
 }
 
-/*@media screen and (min-width: 651px) and (max-width: 1024px){}
-*/
+        /*Media Queries for Cards*/
 
-@media screen and (min-width: 1041px){
+/*Media query for three rows*/
+@media screen and (min-width: 900px) and (max-width: 1200px){
 
   .card-section {
     grid-template-rows: repeat(3, 400px);
@@ -173,7 +173,8 @@ aside p {
 
 }
 
-@media screen and (min-width: 791px) and (max-width: 1040px){
+/*Media query for four rows*/
+@media screen and (min-width: 605px) and (max-width: 899px){
 
   .card-section {
     grid-template-rows: repeat(4, 400px);
@@ -181,7 +182,8 @@ aside p {
 
 }
 
-@media screen and (max-width: 790px){
+/*media query for mobile/8 rows
+*/@media screen and (max-width: 604px){
 
   .card-section {
     grid-template-rows: repeat(8, 400px);
