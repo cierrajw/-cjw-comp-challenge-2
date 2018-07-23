@@ -11,7 +11,7 @@ body {
 header {
   display: grid;
   grid-auto-columns: 1fr 1fr;
-  grid-auto-rows: 1fr 1fr;
+  grid-auto-rows: 50px 75px;
   background-color: #2e343d;
   grid-template-areas: 
   ". admin"
@@ -29,6 +29,7 @@ nav{
   margin-bottom: 0em;
   margin-left: 0em;
   width: 400px;
+  list-style-type: none;
 }
 
 .col-2-header-features {
@@ -43,6 +44,9 @@ nav{
 }
 
 .site-name {
+  display: flex;
+  align-self: flex-end;
+  color: white;
   grid-row: 2;
   grid-area: sitename;
 }
@@ -53,6 +57,7 @@ nav{
   grid-row: 2;
   background-color: #efefef;
   padding-top: 2em;
+  height: 100vh;
 }
 
 main h2 {
@@ -174,29 +179,10 @@ aside p {
 
 }
 
-/*media query for four rows*/
+/*media query for four rows and ipads*/
 @media screen and (min-width: 685px) and (max-width: 899px){
   .card-section {
     grid-template-rows: repeat(4, 400px);
-  }
-
-}
-
-/*@media screen and (min-width: 605px) and (max-width: 899px){
-*/
-
-
-@media screen and (min-width: 387px) and (max-width: 514px){
-
-  .card-section {
-    grid-template-columns: 100%;
-    grid-template-rows: repeat(8, 400px);
-
-  }
-
-  .header-menu {
-    font-size: x-small;
-    width: 80%;
   }
 
   header {
@@ -204,8 +190,23 @@ aside p {
     "admin sitename"
     "nav nav";
   }
+
+  .admin-login {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+
+  }
+
+  .site-name {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 12px;
+  }
+
 }
 
+/*media query for 8 rows*/
 @media screen and (min-width: 605px) and (max-width: 684px){
 
   .card-section {
@@ -219,32 +220,35 @@ aside p {
     justify-content: center;
   }
   .header-menu {
-    font-size: xx-small;
     width: 80%;
   }
 
   header {
+    grid-auto-rows: 50px 35px 50px;
+    padding-bottom: 2em;
     grid-template-areas: 
-    "admin sitename"
+    "sitename sitename"
+    "admin admin"
     "nav nav";
   }
 
   .admin-login {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 10%;
-
+    justify-content: center;
+    align-content: center;
+    width: 100%;
   }
 
   .site-name {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 10%;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
   }
 
 }
 
-/*media query for mobile/8 rows
+/*media query where 8 rows begins
 */@media screen and (max-width: 604px){
 
   .card-section {
@@ -252,8 +256,73 @@ aside p {
     grid-template-rows: repeat(8, 400px);
   }
 
+  .header-menu{
+    width: 85%;
+  }
+
+  header {
+    grid-auto-rows: 50px 30px 75px;
+    grid-template-areas: 
+    "sitename sitename"
+    "admin admin"
+    "nav nav";
+  }
+
+  .admin-login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .site-name {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
+  }
+
 }
 
+/*Another media query for 8 rows*/
+@media screen and (min-width: 387px) and (max-width: 514px){
+
+  .card-section {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 400px);
+
+  }
+
+  .header-menu {
+    font-size: x-small;
+    width: 80%;
+  }
+
+
+  header {
+    grid-auto-rows: 50px 35px 50px;
+    grid-template-areas: 
+    "sitename sitename"
+    "admin admin"
+    "nav nav";
+  }
+
+  .admin-login {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .site-name {
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
+  }
+}
+
+/*Another 8 row media query for smaller devices*/
 @media screen and (min-width: 321px) and (max-width: 400px){
 
   .card-section {
@@ -267,22 +336,25 @@ aside p {
   }
 
   header {
+    grid-auto-rows: 50px 35px 50px;
     grid-template-areas: 
-    "admin sitename"
+    "sitename sitename"
+    "admin admin"
     "nav nav";
   }
 
   .admin-login {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 23px;
-
+    justify-content: center;
+    align-content: center;
+    width: 100%;
   }
 
   .site-name {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 10px;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
   }
 
 }
@@ -295,27 +367,31 @@ aside p {
   }
 
   .header-menu {
+
     font-size: xx-small;
     width: 80%;
   }
 
   header {
+    grid-auto-rows: 50px 35px 50px;
     grid-template-areas: 
-    "admin sitename"
+    "sitename sitename"
+    "admin admin"
     "nav nav";
   }
 
   .admin-login {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 10%;
-
+    justify-content: center;
+    align-content: center;
+    width: 100%;
   }
 
   .site-name {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 10%;
+    justify-content: center;
+    align-content: flex-end;
+    width: 100%;
   }
 
 }
