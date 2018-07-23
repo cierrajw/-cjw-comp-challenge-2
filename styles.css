@@ -174,13 +174,72 @@ aside p {
 
 }
 
-/*Media query for four rows*/
-@media screen and (min-width: 605px) and (max-width: 899px){
+/*media query for four rows*/
+@media screen and (min-width: 685px) and (max-width: 899px){
+  .card-section {
+    grid-template-rows: repeat(4, 400px);
+  }
+
+}
+
+/*@media screen and (min-width: 605px) and (max-width: 899px){
+*/
+
+
+@media screen and (min-width: 387px) and (max-width: 514px){
 
   .card-section {
-    grid-template-columns: 
-    grid-template-rows: repeat(4, 400px);
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 400px);
 
+  }
+
+  .header-menu {
+    font-size: x-small;
+    width: 80%;
+  }
+
+  header {
+    grid-template-areas: 
+    "admin sitename"
+    "nav nav";
+  }
+}
+
+@media screen and (min-width: 605px) and (max-width: 684px){
+
+  .card-section {
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 400px);
+
+  }
+
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  .header-menu {
+    font-size: xx-small;
+    width: 80%;
+  }
+
+  header {
+    grid-template-areas: 
+    "admin sitename"
+    "nav nav";
+  }
+
+  .admin-login {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+
+  }
+
+  .site-name {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
   }
 
 }
@@ -195,20 +254,19 @@ aside p {
 
 }
 
-@media screen and (min-width: 321px) and (max-width: 414px){
+@media screen and (min-width: 321px) and (max-width: 400px){
 
   .card-section {
     grid-template-columns: 100%;
+    grid-template-rows: repeat(8, 400px);
   }
 
   .header-menu {
-    font-size: small;
-    width: 280px;
+    font-size: x-small;
+    width: 80%;
   }
 
   header {
-    grid-template-columns: 1fr;
-    background-color: #2e343d;
     grid-template-areas: 
     "admin sitename"
     "nav nav";
@@ -217,7 +275,7 @@ aside p {
   .admin-login {
     display: flex;
     justify-content: flex-start;
-    padding-left: 20px;
+    padding-left: 23px;
 
   }
 
@@ -227,44 +285,37 @@ aside p {
     padding-right: 10px;
   }
 
-
-
-
-
 }
 
 /*Smallest mobile screens*/
 @media screen and (max-width: 320px){
 
-    .card-section {
-    grid-template-columns: 80%;
+  .card-section {
+    grid-template-columns: 100%;
+  }
+
+  .header-menu {
+    font-size: xx-small;
+    width: 80%;
+  }
+
+  header {
+    grid-template-areas: 
+    "admin sitename"
+    "nav nav";
+  }
+
+  .admin-login {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10%;
+
+  }
+
+  .site-name {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10%;
   }
 
 }
-
-/*
-  .header-menu:hover{
-    cursor: pointer;
-  }
-  ul .header-menu ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-
-  }
-
-  ul .header-menu:hover > ul,
-  ul .header-menu ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-  ul .header-menu ul .header-menu {
-  clear: both;
-  width: 100%;
-}*/
