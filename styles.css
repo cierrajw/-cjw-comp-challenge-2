@@ -178,6 +178,7 @@ aside p {
 
 /*media query for four rows and ipads*/
 @media screen and (min-width: 685px) and (max-width: 899px){
+
   .card-section {
     grid-template-rows: repeat(4, 400px);
   }
@@ -192,7 +193,11 @@ aside p {
   }
 
   .header-menu{
-    width: 85%;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
   .admin-login {
@@ -220,12 +225,12 @@ aside p {
 
   }
 
-  nav{
-    display: flex;
-    justify-content: center;
-  }
   .header-menu {
-    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
   header {
@@ -259,10 +264,15 @@ aside p {
   .card-section {
     grid-template-columns: 100%;
     grid-template-rows: repeat(8, 400px);
+
   }
 
   .header-menu{
-    width: 85%;
+    padding-right: 10%;
+    padding-left: 10%;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
   header {
@@ -299,8 +309,12 @@ aside p {
   }
 
   .header-menu {
-    font-size: x-small;
-    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: small;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
 
@@ -336,8 +350,13 @@ aside p {
   }
 
   .header-menu {
-    font-size: x-small;
-    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: small;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px
   }
 
   header {
@@ -372,9 +391,13 @@ aside p {
   }
 
   .header-menu {
-
-    font-size: xx-small;
-    width: 80%;
+    padding-right: 10%;
+    padding-left: 10%;
+    margin-bottom: 20%;
+    font-size: x-small;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
   }
 
   header {
