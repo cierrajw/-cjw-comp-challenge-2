@@ -356,7 +356,6 @@ aside p {
     width: auto;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 40px
   }
 
   header {
@@ -393,8 +392,8 @@ aside p {
   .header-menu {
     padding-right: 10%;
     padding-left: 10%;
-    margin-bottom: 20%;
-    font-size: x-small;
+/*    margin-bottom: 20%;
+*/  font-size: x-small;
     width: auto;
     display: flex;
     justify-content: space-around;
