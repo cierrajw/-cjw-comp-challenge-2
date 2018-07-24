@@ -22,6 +22,18 @@ nav{
   grid-area: nav;
 }
 
+.fa-share-alt{
+  color: #e0ecff;
+}
+
+.fa-user-circle{
+  color: white;
+}
+
+.fa-caret-down{
+  color: #b9cbe8;
+}
+
 .header-menu {
   color: #efefef;
   display: flex;
@@ -41,14 +53,16 @@ nav{
 .admin-login {
   grid-row: 1;
   grid-area: admin;
+  font-size: x-large;
 }
 
 .site-name {
   display: flex;
-  align-self: flex-end;
-  color: white;
+/*  align-self: flex-end;
+*/  color: white;
   grid-row: 2;
   grid-area: sitename;
+  font-size: 1.5em;
 }
 
 /*Main Section*/
@@ -80,10 +94,8 @@ article {
 }
 
 aside {
-  position: relative;
-  top: 34%;
   width: 100%;
-  height: 66%;
+  height: 62.5%;
   background-color: white;
   border-top: .5px solid #2e343d;
 }
@@ -107,66 +119,14 @@ aside p {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 2px 2px #d4d4d4;
-/*  border-top: 1px solid #2e343d;
-*/  background-position: center center;
-
+  background-position: center center;
 }
 
-.card1 {
-  background-color: red;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic1.jpg');
-  background-size: cover;
-  background-position: 0px 400px;
+.card-template img{
+  height: 150px;
+  width: 100%;
 }
 
-.card2 {
-  background-color: yellow;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic2.jpg');
-  background-size: cover;
-}
-
-.card3 {
-  background-color: blue;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic6.jpg');
-  background-size: cover;
-  background-position: 0px 1150px;
-
-}
-
-.card4 {
-  background-color: green;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic7.jpg');
-  background-size: cover;
-  background-position: 0px 800px;
-}
-
-.card5 {
-  background-color: orange;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic5.jpg');
-  background-size: cover;
-  background-position: 0px 1130px;
-}
-
-.card6 {
-  background-color: purple;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic8.jpg');
-  background-size: cover;
-  background-position: 0px 800px;
-}
-
-.card7 {
-  background-color: pink;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic4.jpg');
-  background-size: cover;
-  background-position: 0px 760px;
-}
-
-.card8 {
-  background-color: magenta;
-  background: url('/Users/Cierra/Documents/Turing Projects/static-comp-2/images/pic3.jpg');
-  background-size: cover;
-  background-position: 0px 1450px;
-}
 
         /*Media Queries for Cards*/
 
@@ -373,7 +333,7 @@ aside p {
   }
 
   header {
-    grid-auto-rows: 50px 35px 50px;
+    grid-auto-rows: 45px 35px 50px;
     grid-template-areas: 
     "sitename sitename"
     "admin admin"
@@ -384,6 +344,7 @@ aside p {
     display: flex;
     justify-content: center;
     align-content: center;
+    height: 15%;
     width: 100%;
   }
 
