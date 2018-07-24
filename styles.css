@@ -30,6 +30,7 @@ article {
 .views{
   position: absolute;
   left: 83%;
+  top: 1%;
   text-align: center;
   color: white;
   font-size: 1em;
@@ -42,7 +43,7 @@ article {
 
 .fa-arrow-circle-right{
   position: absolute;
-  top: 3%;
+  top: 7%;
   left: 3%;
   font-size: 3em;
   color: white;
