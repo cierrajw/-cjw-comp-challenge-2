@@ -8,7 +8,7 @@ This time I used fontawesome for the icons.
 
 <h2>Original:</h2>
 
-![Original](https://github.com/cierrajw/cjw-comp-challenge-1/blob/MediaQueries/images/original-comp-1.jpg)
+![Original]()
 
 <h2>My Comp:</h2>
 
